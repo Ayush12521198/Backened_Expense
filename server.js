@@ -1,3 +1,6 @@
+
+
+
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -22,11 +25,11 @@ app.use(cors());
 //routes
 
 // app.use("/api/v1/users", require("./routes/userRoute"));
-app.use("/api/users", require("./routes/userRoute"));
+app.use("/users", require("./routes/userRoute"));
 
 // //transections routes
 // app.use("/api/v1/transections", require("./routes/transectionRoutes"));
-app.use("/api/transections", require("./routes/transectionRoutes"));
+app.use("/transections", require("./routes/transectionRoutes"));
 
 //static files
 // app.use(express.static(path.join(__dirname, "./client/build")));
